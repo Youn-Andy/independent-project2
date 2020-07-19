@@ -3,11 +3,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+
+}
+
+#text {
+  color: whitesmoke;
+  font-family: 'Gugi', cursive;
+  font-weight: bold;
+  font-size: large;
   
 }
-#text{
-  color: beige;
-}
+
 h1 {
   font-family: 'Gugi', cursive;
   font-weight: bolder;
