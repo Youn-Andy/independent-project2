@@ -2,79 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akan Names</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
-    <div id="heading"> 
-        <!-- img src="images/akan.png" alt=" "> -->
-        <h1>Welcome</h1>
-        <h2 id="get">Cultural Ghanian Names</h2>
-        <p></p>
-      </div>
-      <div class="overlay">
-          <div class="container">
-            <h2>Enter Your Details Here</h2>
-            <form name="myForm" class="form" onsubmit="validate();">
-              <div class="form-group">
-                <label for="number">Year of Birth:</label>
-                <input type="number" class="form-control" id="year" placeholder="Year of Birth ie 1999" name="year">
-              </div>
-              <div class="form-group">
-                <label for="month">Month of Birth:</label>
-                <input type="number" class="form-control" id="month" placeholder="Month of Birth ie 02 for February" name="month">
-              </div>
-              <div class="form-group">
-                <label for="date">Date of Birth:</label>
-                <input type="number" class="form-control" id="date" placeholder="Date of Birth eg 08" name="date">
-              </div>
-              <div class="form-group">
-                <label for="month">Select Gender</label><br>
-                <div class="form-check-inline">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="gender" id="male"> Male 
-                  </label>
-                </div>
-                <div class="form-check-inline">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="gender" id="female">Female 
-                  </label>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary" onclick="findName();">Get Name</button>
-              <br>
-            </form>
-            <p id="results"> </p>
+<body class="container-fluid">
+  <div id="heading">
+    <!-- img src="images/akan.png" alt=" "> -->
+    <h1>Welcome</h1>
+    <h2 id="get">Cultural Ghanian Names</h2>
+  </div>
+  <div>
+    <p>This Web Application should be able to calculate your specific date of birth </p> 
+    <p>You are required to input your year of birth, month of birth, date of birth and <br> finally select your gender</p>
+  </div>
+
+  <div class="overlay">
+    <div class="container">
+      <h2>Enter Your Details Here</h2>
+      <form name="myForm" class="form" onsubmit="validate();">
+        <div class="form-group">
+          <label for="number">Year of Birth:</label>
+          <input type="number" class="form-control" id="year" placeholder="Year of Birth ie 1999" name="year">
+        </div>
+        <div class="form-group">
+          <label for="month">Month of Birth:</label>
+          <input type="number" class="form-control" id="month" placeholder="Month of Birth ie 02 for February"
+            name="month">
+        </div>
+        <div class="form-group">
+          <label for="date">Date of Birth:</label>
+          <input type="number" class="form-control" id="date" placeholder="Date of Birth eg 08" name="date">
+        </div>
+        <div class="form-group">
+          <label for="month">Select Gender</label><br>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" id="male"> Male
+            </label>
           </div>
-      </div>
-      <div class="card-deck">
-        <div class="card ">
-          <div class="card-body text-center">
-            <p class="card-text">Akan names are derived from Ghanian culture. Get your Akan name by filling the form above!</p>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="gender" id="female">Female
+            </label>
           </div>
         </div>
-        <div class="card ">
-            <div class="card-body text-center">
-              <p class="card-text">Names are based on gender and the date you were born. <br>
-                <span class="fa-stack fa-lg">
-                    <i class="fa fa-globe fa-stack-1x" style="color:rgb(188, 222, 252)"></i>
-                  </span><a href="http://www.afropedea.org/akan-names"> More info on Akan names</a>
-              </p>
-            </div>
-          </div>
-          <div class="card ">
-            <div class="card-body text-center">
-              <p class="card-text">Frequently in Ghana, children are given their first name as a 'day name' 
-                which corresponds to the day in the week they were born.</p>
-            </div>
-          </div>
+        <button type="submit" class="btn btn-primary" onclick="findName();">Get Name</button>
+        <br>
+      </form>
+      <p id="results"> </p>
+    </div>
+  </div>
+  <div class="card-deck">
+    <div class="card ">
+      <div class="card-body text-center">
+        <p class="card-text">Akan names are derived from Ghanian culture. Get your Akan name by filling the form above!
+        </p>
       </div>
+    </div>
+    <div class="card ">
+      <div class="card-body text-center">
+        <p class="card-text">Names are based on gender and the date you were born. <br>
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-globe fa-stack-1x" style="color:rgb(188, 222, 252)"></i>
+          </span><a href="http://www.afropedea.org/akan-names"> More info on Akan names</a>
+        </p>
+      </div>
+    </div>
+    <div class="card ">
+      <div class="card-body text-center">
+        <p class="card-text">Frequently in Ghana, children are given their first name as a 'day name'
+          which corresponds to the day in the week they were born.</p>
+      </div>
+    </div>
+  </div>
 
-      <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
