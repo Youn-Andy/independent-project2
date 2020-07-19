@@ -1,3 +1,6 @@
+Akan Names
+
+
 Author
 Philip Andrew Okoth.
 
@@ -31,4 +34,8 @@ The computer compares the input values based on the parameters set and if it fal
 
 
 Contact Information
+Send an email for any questions to ```ayietaphilip00@outlook.com```
+
+Live link of the project 
+```https://youn-andy.github.io/independent-project2```
 

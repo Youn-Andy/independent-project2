@@ -7,7 +7,7 @@ var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", " Yaa", "Afua", "Ama"];
 function validate() {
   var genders = document.getElementsByName("gender");
   if (document.myForm.year.value == "" || document.myForm.year.value.length != 4 || document.myForm.year.value > 2100 || document.myForm.year.value <= 1900) {
-    alert("Please provide a valid year of birth! eg 2019");
+    alert("Please provide a valid value i.e 1999");
     document.myForm.year.focus();
     return false;
   }
@@ -24,7 +24,7 @@ function validate() {
     return false;
   }
   else if (genders[0].checked == false && genders[1].checked == false) {
-    alert("You must select male or female");
+    alert("Please select male or female");
     return false;
   }
   else {
